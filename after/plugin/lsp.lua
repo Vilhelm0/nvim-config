@@ -55,8 +55,8 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, opts)
     vim.keymap.set("n", "<leader>dd", vim.diagnostic.open_float, opts)   
     vim.keymap.set("n", "<leader>a", vim.lsp.buf.code_action, opts)
-   --	vim.keymap.set("i", "", vim.lsp.buf.signature_help, opts)
     end)
+
 
 
 lsp.setup_nvim_cmp({
