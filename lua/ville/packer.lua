@@ -35,7 +35,6 @@ use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install",
 			  ts_update()
 		  end,
     	  }
-	  
 	  use {
 		  'VonHeikemen/lsp-zero.nvim',
 		  requires = {
@@ -58,6 +57,7 @@ use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install",
 		  }
 	}
 
+	  use ('christoomey/vim-tmux-navigator')
 	  use('nvim-treesitter/playground')
 	  use('mbbill/undotree')     
       use('preservim/nerdtree')

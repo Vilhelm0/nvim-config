@@ -54,7 +54,8 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("n", "<leader>dj", vim.diagnostic.goto_prev, opts)
     vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, opts)
     vim.keymap.set("n", "<leader>dd", vim.diagnostic.open_float, opts)   
-    vim.keymap.set("n", "<leader>a", vim.lsp.buf.code_action, opts)
+    vim.keymap.set("n", "<leader>a", vim.lsp.buf.code_action , opts)
+    vim.keymap.set("n", "<leader>dr", vim.lsp.buf.references ,opts)
     end)
 
 
